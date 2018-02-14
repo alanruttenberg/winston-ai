@@ -1,4 +1,4 @@
-;;;; -*- mode:Lisp; package:user -*- ;;;;
+;;;; -*- mode:Lisp; package:winston-ai -*- ;;;;
 ;;;; Created: 10 December 1992
 ;;;; Copyright 1992 Patrick H. Winston and Berthold K. P. Horn.
 ;;;; All rights reserved.
@@ -24,6 +24,12 @@ This version is the same as the one in the book except that
 (MAKE-EMPTY-STREAM) replaces 'EMPTY-STREAM.
 
 |#
+
+(in-package :winston-ai)
+
+
+(defvar *rules*)
+(defvar *assertions*)
 
 ;;;; PROCEDURES
 
@@ -103,5 +109,6 @@ This version is the same as the one in the book except that
                (format t "~%Nothing new noted.")
                'done)))
       (when (use-rule (stream-first rule-stream))
+	(sleep 0.001)
         (setf repeat-switch t))))
 

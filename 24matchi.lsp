@@ -1,4 +1,4 @@
-;;;; -*- mode:Lisp; package:user -*- ;;;;
+;;;; -*- mode:Lisp; package:winston-ai -*- ;;;;
 ;;;; Created: 10 December 1992
 ;;;; Copyright 1992 Patrick H. Winston and Berthold K. P. Horn.
 ;;;; All rights reserved.
@@ -17,6 +17,7 @@
 ;;;; shall have no liability for any alleged defect or damages.
 
 ;;;; PROCEDURES
+(in-package :winston-ai)
 
 (defun add-binding (pattern-variable-expression datum bindings)
  (if (eq '\_ (extract-variable pattern-variable-expression))

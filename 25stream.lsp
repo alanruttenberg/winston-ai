@@ -1,4 +1,4 @@
-;;;; -*- mode:Lisp; package:user -*- ;;;;
+;;;; -*- mode:Lisp; Package:winston-ai -*- ;;;;
 ;;;; Created: 10 December 1992
 ;;;; Copyright 1992 Patrick H. Winston and Berthold K. P. Horn.
 ;;;; All rights reserved.
@@ -27,6 +27,8 @@ is computed only once.  Also, MAKE-EMPTY-STREAM is introduced;
 (MAKE-EMPTY-STREAM) replaces 'EMPTY-STREAM.
 
 |#
+
+(in-package :winston-ai)
 
 ;;;; BASIC ACCESS FUNCTIONS WITH DELAYED EVALUATION
 

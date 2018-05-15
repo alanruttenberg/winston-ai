@@ -1,4 +1,4 @@
-'cl-user::?
+(intern "?" 'cl-user)
 
 (defpackage winston-ai
   (:use :cl)
